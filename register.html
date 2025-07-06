@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register - SIMPRAK</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center text-green-700">Daftar Akun SIMPRAK</h2>
+
+    <form method="POST" action="do_register.php" class="space-y-4">
+      <!-- Username -->
+      <div>
+        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+        <input type="text" name="username" id="username" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" required />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" name="password" id="password" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" required />
+      </div>
+
+      <!-- Role -->
+      <div>
+        <label for="role" class="block text-sm font-medium text-gray-700">Daftar Sebagai</label>
+        <select name="role" id="role" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" required>
+          <option value="">-- Pilih Role --</option>
+          <option value="mahasiswa">Mahasiswa</option>
+          <option value="asisten">Asisten</option>
+        </select>
+      </div>
+
+      <!-- Tombol -->
+      <div>
+        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded">
+          Daftar
+        </button>
+      </div>
+    </form>
+
+    <p class="mt-4 text-center text-sm text-gray-500">
+      Sudah punya akun?
+      <a href="login.html" class="text-green-600 hover:underline">Login di sini</a>
+    </p>
+  </div>
+</body>
+</html>

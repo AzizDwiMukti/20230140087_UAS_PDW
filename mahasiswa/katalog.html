@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katalog Praktikum</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+    }
+  </style>
+</head>
+
+</head>
+<body class="bg-gradient-to-b from-gray-100 to-white min-h-screen text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-700 to-indigo-600 text-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">📘 Mata Praktikum</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#" class="hover:underline">Praktikum Saya</a>
+        <a href="#" class="hover:underline text-red-200">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-10">
+    <h2 class="text-4xl font-extrabold mb-2">Daftar Mata Praktikum</h2>
+    <p class="text-gray-600">Pilih dan ikuti mata praktikum sesuai minat dan kebutuhanmu</p>
+  </section>
+
+  <!-- Kartu Praktikum -->
+  <main class="container mx-auto px-6 pb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Card Praktikum -->
+    <div class="bg-white rounded-2xl shadow-lg border hover:shadow-2xl transition-all duration-300 p-6">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+          <div class="bg-blue-100 p-2 rounded-full">
+            <i data-feather="book-open" class="w-5 h-5 text-blue-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-blue-700">Pemrograman Web</h3>
+        </div>
+        <span class="text-xs bg-gray-100 px-2 py-1 rounded text-gray-500">ID: 1</span>
+      </div>
+      <p class="text-sm text-gray-600 mb-6">Belajar HTML, CSS, JavaScript, dan PHP untuk membangun aplikasi web.</p>
+      <a href="#" class="inline-flex items-center bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm px-4 py-2 rounded-lg font-medium hover:scale-105 hover:shadow-md transition">
+        <i data-feather="plus-circle" class="w-4 h-4 mr-2"></i> Daftar Sekarang
+      </a>
+    </div>
+
+    <!-- Duplikat card untuk mata praktikum lainnya -->
+    <div class="bg-white rounded-2xl shadow-lg border hover:shadow-2xl transition-all duration-300 p-6">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+          <div class="bg-green-100 p-2 rounded-full">
+            <i data-feather="database" class="w-5 h-5 text-green-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-green-700">Basis Data</h3>
+        </div>
+        <span class="text-xs bg-gray-100 px-2 py-1 rounded text-gray-500">ID: 2</span>
+      </div>
+      <p class="text-sm text-gray-600 mb-6">Belajar relasi tabel, SQL, normalisasi, dan pengelolaan basis data.</p>
+      <div class="flex items-center gap-2 bg-green-100 text-green-700 text-sm font-medium px-4 py-2 rounded-lg">
+        <i data-feather="check-circle" class="w-4 h-4"></i> Sudah Didaftarkan
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg border hover:shadow-2xl transition-all duration-300 p-6">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+          <div class="bg-purple-100 p-2 rounded-full">
+            <i data-feather="wifi" class="w-5 h-5 text-purple-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-purple-700">Jaringan Komputer</h3>
+        </div>
+        <span class="text-xs bg-gray-100 px-2 py-1 rounded text-gray-500">ID: 3</span>
+      </div>
+      <p class="text-sm text-gray-600 mb-6">Konsep topologi, subnetting, pengalamatan IP dan konfigurasi jaringan.</p>
+      <a href="#" class="inline-flex items-center bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-sm px-4 py-2 rounded-lg font-medium hover:scale-105 hover:shadow-md transition">
+        <i data-feather="plus-circle" class="w-4 h-4 mr-2"></i> Daftar Sekarang
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500 border-t">
+    &copy; 2025 Sistem Informasi Praktikum – Azis Dwi Mukti
+  </footer>
+
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>

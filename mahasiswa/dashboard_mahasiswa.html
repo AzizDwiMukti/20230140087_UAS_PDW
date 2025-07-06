@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Mahasiswa - SIMPRAK</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <!-- Header -->
+  <header class="bg-blue-700 text-white p-4 shadow">
+    <div class="container mx-auto">
+      <h1 class="text-xl font-bold">Dashboard Mahasiswa</h1>
+      <p class="text-sm">Selamat datang di SIMPRAK</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-6">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Praktikum yang Kamu Ikuti</h2>
+
+    <!-- Grid Praktikum -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Praktikum Card -->
+      <div class="bg-white rounded shadow p-4 hover:shadow-md transition">
+        <h3 class="text-lg font-bold text-blue-700">Pemrograman Web</h3>
+        <p class="text-gray-600 text-sm mb-2">Praktikum pembuatan website dinamis menggunakan HTML, CSS, dan PHP.</p>
+        <a href="detail_praktikum.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm">
+          Lihat Tugas
+        </a>
+      </div>
+
+      <!-- Praktikum Card -->
+      <div class="bg-white rounded shadow p-4 hover:shadow-md transition">
+        <h3 class="text-lg font-bold text-blue-700">Basis Data</h3>
+        <p class="text-gray-600 text-sm mb-2">Belajar tentang relasi tabel, ERD, dan query MySQL.</p>
+        <a href="detail_praktikum.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm">
+          Lihat Tugas
+        </a>
+      </div>
+
+      <!-- Praktikum Card -->
+      <div class="bg-white rounded shadow p-4 hover:shadow-md transition">
+        <h3 class="text-lg font-bold text-blue-700">Jaringan Komputer</h3>
+        <p class="text-gray-600 text-sm mb-2">Praktikum konfigurasi jaringan dan IP addressing.</p>
+        <a href="detail_praktikum.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm">
+          Lihat Tugas
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 mt-10 mb-4">
+    &copy; <?= date('Y') ?> SIMPRAK - Sistem Praktikum
+  </footer>
+</body>
+</html>
